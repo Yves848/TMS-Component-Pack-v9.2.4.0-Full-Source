@@ -1,0 +1,25 @@
+Brand,Model,Hp,Max speed,City,Country,Type,Website,Year,Price,Cylinders
+<b>BMW</b>,Z8,400,250,Munchen,Germany,cabrio,https://www.bmw.com,2000,95000,8
+Lamborghini,Urus,600,250,Sant'Agata Bolognese,Italy,SUV,,2017,150000,10
+BMW,i8,228,227,Munchen,Germany,cabrio,https://www.bmw.com,2014,142000,3
+BMW,Z4,335,155,Munchen,Germany,cabrio,https://www.bmw.com,2003,60000,6
+Ferrari,California T,553,294,Maranello,Italy,cabrio GT,https://www.ferrari.com,2009,250000,8
+Lamborghini,Aventador,751,350,Sant'Agata Bolognese,Italy,cabrio,,2011,475000,12
+Lamborghini,Gallardo,350,350,Sant'Agata Bolognese,Italy,cabrio,,2003,200000,8
+Mercedes,S63 AMG,525,320,Stuttgart,Germany,coupé,https://www.mercedes-benz.com,2006,220000,8
+BMW,X6,306,250,Munchen,Germany,sport coupé,https://www.bmw.com,2008,80000,8
+Range Rover,Evoque,240,250,Liverpool,UK,SUV,,2008,35000,4
+Mercedes,AMG GT,476,304,Stuttgart,Germany,coupé,https://www.mercedes-benz.com,2015,120000,8
+Mercedes,SLS,571,317,Stuttgart,Germany,coupé,https://www.mercedes-benz.com,2012,260000,8
+Mercedes,SLR,623,335,Stuttgart,Germany,coupé,https://www.mercedes-benz.com,2002,620000,8
+Mercedes,SL 65 AMG,612,250,Stuttgart,Germany,sport cabrio,https://www.mercedes-benz.com,2004,320000,12
+BMW,M3,431,250,Munchen,Germany,berline,https://www.bmw.com,2014,75000,6
+BMW,MX5,575,250,Munchen,Germany,Sport SUV,https://www.bmw.com,2015,165000,8
+Ferrari,458 Italia,570,325,Maranello,Italy,Sport-Coupé,https://www.ferrari.com,2009,200000,8
+Ferrari,488 GTB,670,330,Maranello,Italy,Sports car,https://www.ferrari.com,2015,210000,8
+Ferrari,LaFerrari FXXK,1050,360,Maranello,Italy,Track Day Car,https://www.ferrari.com,2015,2500000,12
+Mclaren,MP4-12c,1000,335,Woking,UK,Sports car,,2011,260000,16
+Mclaren,P1,916,350,Woking,UK,Sports car,,2014,1000000,8
+Porsche,918 Spyder,608,340,Stuttgart,Germany,Sports car,,2013,850000,8
+Porsche,Macan GTS,360,256,Stuttgart,Germany,Sports SUV,,2013,75000,4
+Porsche,Panamera Turbo,550,306,Stuttgart,Germany,Sedan,,2016,160000,6

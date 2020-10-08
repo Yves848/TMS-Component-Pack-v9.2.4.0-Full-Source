@@ -1,0 +1,4 @@
+email.png,New mail from Frank: "Delay on new ...
+facebook.png,+100k Total Follows
+calendar.png, Next meeting: <b>Sprint Planning</b> at 14:00
+skype.png,Serge replied to your message: <i>"Is it..."</i>

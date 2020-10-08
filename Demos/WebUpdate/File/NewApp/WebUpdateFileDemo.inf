@@ -1,0 +1,20 @@
+[update]
+date=2/6/2028
+
+[action]
+msg=This is a file based update
+
+[whatsnew]
+file=c:\newapp\whatsnew.txt
+
+[files]
+count=1
+
+[file1]
+url=c:\newapp\WebUpdateFileDemo.exe_new
+
+[application]
+appupdate=1
+appname=WebUpdateFileDemo.exe
+appcomps=WebUpdateFileDemo.exe_new
+

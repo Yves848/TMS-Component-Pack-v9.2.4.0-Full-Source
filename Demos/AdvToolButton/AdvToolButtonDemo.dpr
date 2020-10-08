@@ -1,0 +1,13 @@
+program AdvToolButtonDemo;
+
+uses
+  Forms,
+  UAdvToolButtonDemo in 'UAdvToolButtonDemo.pas' {Form1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

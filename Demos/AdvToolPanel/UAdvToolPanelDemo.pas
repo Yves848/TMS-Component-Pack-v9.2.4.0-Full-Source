@@ -1,0 +1,174 @@
+{***********************************************************************}
+{ TAdvToolPanels component                                              }
+{ for Delphi & C++Builder                                               }
+{                                                                       }
+{ written by TMS Software                                               }
+{            copyright © 2003 - 2019                                    }
+{            Email: info@tmssoftware.com                                }
+{            Web: https://www.tmssoftware.com                           }
+{***********************************************************************}
+
+unit UAdvToolPanelDemo;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms,
+  Dialogs, ExtCtrls, ToolPanels, StdCtrls, ImgList, ComCtrls, Menus, Buttons,
+  System.ImageList, ShellAPI, AdvStyleIF
+  {$IFDEF VER150}
+  , XPMan, Buttons, Menus
+  {$ENDIF}
+  ;
+
+type
+  TForm1 = class(TForm)
+    advtoolpaneltab1: TAdvToolPanelTab;
+    AdvToolPanel1: TAdvToolPanel;
+    AdvToolPanel2: TAdvToolPanel;
+    Memo1: TMemo;
+    Edit1: TEdit;
+    Label1: TLabel;
+    Label2: TLabel;
+    Edit2: TEdit;
+    AdvToolPanel4: TAdvToolPanel;
+    ImageList1: TImageList;
+    Panel1: TPanel;
+    Button1: TButton;
+    AdvToolPanel3: TAdvToolPanel;
+    AdvToolPanelTab2: TAdvToolPanelTab;
+    AdvToolPanel5: TAdvToolPanel;
+    AdvToolPanel6: TAdvToolPanel;
+    Button2: TButton;
+    MonthCalendar1: TMonthCalendar;
+    Button3: TButton;
+    ComboBox1: TComboBox;
+    Image1: TImage;
+    Label3: TLabel;
+    Image2: TImage;
+    TreeView2: TTreeView;
+    Label4: TLabel;
+    Memo2: TMemo;
+    CheckBox1: TCheckBox;
+    Edit3: TEdit;
+    SpeedButton1: TSpeedButton;
+    Label5: TLabel;
+    ImageList2: TImageList;
+    PopupMenu1: TPopupMenu;
+    Copy1: TMenuItem;
+    Cut1: TMenuItem;
+    Paste1: TMenuItem;
+    Panel2: TPanel;
+    Label19: TLabel;
+    Label18: TLabel;
+    CheckBox2: TCheckBox;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure ComboBox1Change(Sender: TObject);
+    procedure CheckBox2Click(Sender: TObject);
+    procedure AdvToolPanel1CaptionBtnClick(Sender: TObject;
+      CaptionButtonRect: TRect);
+    procedure Copy1Click(Sender: TObject);
+    procedure Cut1Click(Sender: TObject);
+    procedure Paste1Click(Sender: TObject);
+    procedure Label19Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure CheckBox1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  i: integer;
+begin
+  advtoolpaneltab1.UnHidePanels;
+  AdvToolPanelTab2.UnHidePanels;
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+  AdvToolPanelTab1.CreatePanel.Caption := 'dynamic created';
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+begin
+  Memo1.Lines.Text := 'Hello world';
+end;
+
+procedure TForm1.ComboBox1Change(Sender: TObject);
+begin
+  advtoolpaneltab1.SetComponentStyle(TTMSStyle(ComboBox1.Items.Objects[ComboBox1.ItemIndex]));
+//  AdvToolPanelTab2.SetComponentStyle(TTMSStyle(ComboBox1.Items.Objects[ComboBox1.ItemIndex]));
+
+end;
+
+procedure TForm1.CheckBox1Click(Sender: TObject);
+begin
+  if CheckBox1.Checked then
+  begin
+      advtoolpaneltab1.TabGlyph := image1.Picture.Bitmap;
+  end
+  else
+  begin
+    advtoolpaneltab1.TabGlyph := nil;
+  end;
+end;
+
+procedure TForm1.CheckBox2Click(Sender: TObject);
+begin
+  AdvToolPanelTab1.Persist.AutoSave := CheckBox1.Checked;
+  AdvToolPanelTab2.Persist.AutoSave := CheckBox1.Checked;
+end;
+
+procedure TForm1.AdvToolPanel1CaptionBtnClick(Sender: TObject;
+  CaptionButtonRect: TRect);
+var
+  pt: TPoint;
+begin
+  pt := Point(captionbuttonrect.Left,captionbuttonrect.Bottom);
+  pt := AdvToolPanel1.ClientToScreen(pt);
+  popupmenu1.Popup(pt.X,pt.Y);
+  AdvToolPanel1.Invalidate;
+end;
+
+procedure TForm1.Copy1Click(Sender: TObject);
+begin
+  memo1.CopyToClipboard;
+end;
+
+procedure TForm1.Cut1Click(Sender: TObject);
+begin
+  memo1.CutToClipboard;
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  FillStyleList(ComboBox1.Items);
+  ComboBox1.ItemIndex := 2;
+  advtoolpaneltab1.SetComponentStyle(TTMSStyle(ComboBox1.Items.Objects[2]));
+  AdvToolPanelTab2.SetComponentStyle(TTMSStyle(ComboBox1.Items.Objects[2]));
+
+end;
+
+procedure TForm1.Label19Click(Sender: TObject);
+begin
+  ShellExecute(handle, 'open', 'https://tmssoftware.com/site/tmsvcluipack.asp', nil, nil, SW_SHOWNORMAL);
+end;
+
+procedure TForm1.Paste1Click(Sender: TObject);
+begin
+  Memo1.PasteFromClipboard;
+end;
+
+end.

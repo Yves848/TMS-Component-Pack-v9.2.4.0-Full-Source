@@ -1,0 +1,23 @@
+ID;ProjectNumber;Type;Fabric;Amount;Contact;statIdx;Status;Cost;Problems
+0;E19-10021;Shirt;WK-071-12;100;Robert Tailor;4;;2413;
+1;E19-10021;Shirt;KL-007-01;200;Robert Tailor;4;;3845;
+2;E19-10021;Skirt;PS-092-04;150;Robert Tailor;0;;3076;
+3;E19-10076;Pants;WD-301-03;300;Maria Schneider;1;;4763;Last approval needed
+4;E19-10104;T-Shirt;SS-037-01;50;;2;;1282;New contact information needed
+5;E19-10113;T-Shirt;SS-038-03;300;Fransesca Portnoy;4;;4317;
+6;E19-10113;Sweater;WK-071-01;200;Fransesca Portnoy;2;;3645;Machine maintenance ongoing
+7;E19-10113;Sweater;WK-071-07;200;Fransesca Portnoy;4;;3653;
+8;E19-11001;Dress;ET-143-06;100;Jean Tailleur;0;;3025;
+9;E19-11001;Dress;ET-143-08;100;Jean Tailleur;1;;3048;
+10;E19-11001;Dress;WK-071-23;200;Jean Tailleur;4;;6345;
+11;E19-11001;Pants;ET-143-10;150;Jean Tailleur;2;;4213;Fabric almost out
+12;E19-11001;Poncho;ET-143-09;50;Jean Tailleur;0;;1378;
+13;E19-11016;Blouse;FB-038-01;50;Pilar Alfaiate;0;;1675;
+14;E19-11016;Blouse;ET-143-15;100;Pilar Alfaiate;4;;2867;
+15;E19-11016;Pants;KP-205-13;300;Pilar Alfaiate;1;;4268;
+16;E19-11019;Table Cloth;TL-645-01;300;Marcel Kleermakers;3;;5032;Out of fabric
+17;E19-11019;Table Cloth;ET-143-10;300;Marcel Kleermakers;1;;5364;
+18;E19-11020;Pants;WK-071-11;250;Alessandra Sarto;1;;3865;
+19;E19-11020;Pants;PS-092-04;200;Alessandra Sarto;1;;3216;
+20;E19-11020;Pants;SS-037-07;100;Alessandra Sarto;1;;1864;
+21;E19-11020;Pants;FB-038-02;100;Alessandra Sarto;1;;1974;
